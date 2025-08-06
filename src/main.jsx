@@ -9,7 +9,7 @@ import {
 } from "react-router";
 import MainRoute from './components/MainRoute/MainRoute.jsx'
 import About from './components/About/About.jsx';
-import Home from './components/pages/Home.jsx';
+import Home from './components/Pages/Home.jsx';
 import Contact from './components/Contact/Contact.jsx';
 
 const router = createBrowserRouter([
