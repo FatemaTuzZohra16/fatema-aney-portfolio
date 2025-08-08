@@ -11,6 +11,9 @@ import MainRoute from './components/MainRoute/MainRoute.jsx'
 import About from './components/About/About.jsx';
 import Home from './components/Pages/Home.jsx';
 import Contact from './components/Contact/Contact.jsx';
+import CreativeWorks from './components/CreativeWorks/CreativeWorks.jsx';
+import { ContactMe } from './components/Pages/ContactMe.jsx';
+import Completed from './components/Pages/Completed.jsx';
 
 const router = createBrowserRouter([
   { path: "/",
@@ -19,6 +22,9 @@ const router = createBrowserRouter([
     { index: true, Component: Home },
     { path: "/about", Component: About },
     { path: "/contact", Component: Contact },
+    { path: "/work", Component: CreativeWorks },
+    { path: "/contactMe", Component: ContactMe },
+    { path: "/completed", Component: Completed },
    ]
    },
 ]);

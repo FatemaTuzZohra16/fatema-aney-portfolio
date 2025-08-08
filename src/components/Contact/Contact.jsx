@@ -21,7 +21,7 @@ const Contact = () => {
         <div className='py-[80px] text-center'>
             <Container>
                 <h1 className='font-primary font-extrabold text-[36px] mb-12 cursor-pointer hover:animate-bounce e duration-500 hover:text-primary'>Get in Touch</h1>
-                <div className='w-[700px] flex flex-col bg-section mx-auto py-12 px-10 rounded-2xl hover:shadow-[0_20px_20px_rgba(0,0,0,0.25)]'>
+                <div className='w-[700px] flex flex-col bg-section mx-auto py-12 px-10 rounded-2xl hover:shadow-[0_20px_20px_rgba(0,0,0,0.25)] cursor-pointer'>
                     <form action="https://formspree.io/f/xovlkdvl" method="POST">
                         <input type='text'
                             placeholder='Your Name'
@@ -45,7 +45,7 @@ const Contact = () => {
                             onChange={handleMessage}
                             className='w-full border outline-0 border-gray-300 pt-3 h-[200px] rounded-[20px] pl-4'
                         />
-                        <button type='submit' className='text-start bg-primary text-white py-[15px] px-[45px] mt-[30px] rounded-[10px] font-bold text-[20px] leading-8 hover:scale-90 duration-300'>Sent Message</button>
+                        <button type='submit' className='text-start bg-primary text-white py-[15px] px-[45px] mt-[30px] rounded-[10px] font-bold text-[20px] leading-8 hover:scale-90 duration-300 cursor-pointer'>Sent Message</button>
                     </form>
 
                 </div>
