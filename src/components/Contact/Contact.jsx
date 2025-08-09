@@ -21,7 +21,7 @@ const Contact = () => {
         <div className='py-[80px] text-center'>
             <Container>
                 <h1 className='font-primary font-extrabold text-[36px] mb-12 cursor-pointer hover:animate-bounce e duration-500 hover:text-primary'>Get in Touch</h1>
-                <div className='w-[700px] flex flex-col bg-section mx-auto py-12 px-10 rounded-2xl hover:shadow-[0_20px_20px_rgba(0,0,0,0.25)] cursor-pointer'>
+                <div className='w-auto md:w-[700px] flex flex-col bg-section mx-auto py-12 px-10 rounded-2xl hover:shadow-[0_20px_20px_rgba(0,0,0,0.25)] cursor-pointer'>
                     <form action="https://formspree.io/f/xovlkdvl" method="POST">
                         <input type='text'
                             placeholder='Your Name'

@@ -13,10 +13,10 @@ const CreativeWorks = () => {
     <div className='py-[90px]'>
             <Container>
                 <div>
-                    <h1 className='font-primary text-[40px] leading-[45px] text-center pb-[60px]'>MY CREATIVES WORKS.</h1>
+                    <h1 className='font-primary font-bold text-[40px] leading-[45px] text-center pb-[60px]'>MY CREATIVES WORKS.</h1>
                 </div>
 
-                <div className='flex flex-wrap justify-between gap-6'>
+                <div className='flex flex-wrap justify-center md:justify-between gap-6'>
                     <div className='w-[350px] h-[365px] relative group bg-gradient-to-br from-blue-600 text-shadow-green-300 rounded-[10px] pt-12 pb-[70px] px-8 overflow-hidden transition duration-300'>
                         <img src={innovate} alt=""  className='w-full h-[240px] object-cover object-top'/>
                         <div className='pl-0'>

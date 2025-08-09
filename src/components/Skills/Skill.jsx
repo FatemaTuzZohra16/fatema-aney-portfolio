@@ -13,7 +13,7 @@ const Skill = () => {
         <div className='bg-section pt-[60px] pb-[90px]'>
             <Container>
                 <div>
-                    <h1 className='font-primary text-[40px] leading-[45px] text-center pb-[60px]'>My Skills</h1>
+                    <h1 className='font-primary font-bold text-[40px] leading-[45px] text-center pb-[60px]'>My Skills</h1>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-9 text-center">

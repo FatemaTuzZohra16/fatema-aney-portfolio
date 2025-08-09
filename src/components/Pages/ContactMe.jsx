@@ -66,7 +66,7 @@ export const ContactMe = () => {
     <div className='py-[100px] bg-center bg-cover bg-black/70' 
     style={{backgroundImage: `url(${contactBannar})`}}>
         <Container>
-            <div className='w-[840px] bg-black text-white py-[45px] px-9 rounded-[10px] mx-auto'>
+            <div className='w-auto lg:w-[840px] bg-black text-white py-[45px] px-9 rounded-[10px] mx-auto hover:shadow-[0_6px_20px_rgba(255,255,255,0.7)]'>
                 <h1 className='font-primary font-bold text-[35px] mb-[50px]'>Contact  Me</h1>
                 <div className='flex flex-wrap gap-6'>
                     <div className='w-full border border-white rounded bg-transparent text-lg'>
@@ -96,7 +96,7 @@ export const ContactMe = () => {
                 </div>
                 <div className='flex gap-x-[20px] mt-8'>
                     <div>
-                        <button onClick={handleSubmit} href="" className='font-primary font-medium bg-white text-black py-[12px] px-[35px] inline-block rounded-[10px] hover:shadow-lg transform transition-transform duration-300 hover:scale-90 text-lg'>Sent Message</button>
+                        <button onClick={handleSubmit} href="" className='font-primary font-medium bg-white text-black py-[19px] md:py-[12px] px-[19px] md:px-[35px] inline-block rounded-[10px] hover:shadow-lg transform transition-transform duration-300 hover:scale-90 text-[13px] sm:text-lg'>Sent Message</button>
                     </div>
                     <div>
                         <button onClick={handleReset} href="" className='font-primary font-medium bg-transparent border text-white py-[12px] px-[35px] inline-block rounded-[10px] hover:shadow-lg transform transition-transform duration-300 hover:scale-90 text-lg'>Reset</button>
