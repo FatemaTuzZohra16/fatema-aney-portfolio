@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../Layout/Container'
-import contactBannar from '../../assets/contactBannar.webp'
+import contactBannar from '../../assets/contactBannar.jpg'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router';
 
@@ -63,10 +63,11 @@ export const ContactMe = () => {
         }
     }
   return (
-    <div className='py-[100px] bg-center bg-cover bg-black/70' 
+    <div className='relative py-[100px] bg-center bg-cover bg-black/90' 
     style={{backgroundImage: `url(${contactBannar})`}}>
+        <div className="absolute inset-0 bg-black/70"></div>
         <Container>
-            <div className='w-auto lg:w-[840px] bg-black text-white py-[45px] px-9 rounded-[10px] mx-auto hover:shadow-[0_6px_20px_rgba(255,255,255,0.7)]'>
+            <div className='relative z-10 w-auto lg:w-[840px] bg-black text-white py-[45px] px-9 rounded-[10px] mx-auto hover:shadow-[0_3px_6px_rgba(255,255,255,0.7)]'>
                 <h1 className='font-primary font-bold text-[35px] mb-[50px]'>Contact  Me</h1>
                 <div className='flex flex-wrap gap-6'>
                     <div className='w-full border border-white rounded bg-transparent text-lg'>

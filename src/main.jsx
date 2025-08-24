@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact.jsx';
 import CreativeWorks from './components/CreativeWorks/CreativeWorks.jsx';
 import { ContactMe } from './components/Pages/ContactMe.jsx';
 import Completed from './components/Pages/Completed.jsx';
+import BlankRoute from './components/MainRoute/BlankRoute.jsx';
 
 const router = createBrowserRouter([
   { path: "/",
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
     { path: "/about", Component: About },
     { path: "/contact", Component: Contact },
     { path: "/work", Component: CreativeWorks },
+   ]
+   },
+  { path: "/",
+   Component: BlankRoute,
+   children: [
     { path: "/contactMe", Component: ContactMe },
     { path: "/completed", Component: Completed },
    ]
