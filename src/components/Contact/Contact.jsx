@@ -2,8 +2,19 @@ import React, { useState } from 'react'
 import Container from '../Layout/Container'
 import { useNavigate } from 'react-router'
 import { Bounce, ToastContainer, toast } from 'react-toastify';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+     useEffect(() => {
+    AOS.init({
+      offset: 80,    
+      duration: 700,   
+      easing: "ease-out",
+      once: true,   
+    });
+  }, []);
     const navigate = useNavigate()
 
     const [name, setName] = useState('')
@@ -72,7 +83,7 @@ pauseOnHover
 theme="light"
 transition={Bounce}
 />
-                <h1 className='font-primary font-extrabold text-[36px] mb-12 cursor-pointer hover:animate-bounce e duration-500 hover:text-primary'>Get in Touch</h1>
+                <h1 data-aos="fade-up" className='font-primary font-extrabold text-[36px] mb-12 cursor-pointer  hover:text-primary'>Get in Touch</h1>
                 <div className='w-auto md:w-[700px] flex flex-col bg-section mx-auto py-12 px-10 rounded-2xl hover:shadow-[0_20px_20px_rgba(0,0,0,0.25)] cursor-pointer'>
                         <input type='text'
                             placeholder='Your Name'

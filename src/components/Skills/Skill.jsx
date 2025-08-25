@@ -6,14 +6,24 @@ import { SiRedux } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 import { SiNextdotjs } from "react-icons/si";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skill = () => {
-
+ useEffect(() => {
+    AOS.init({
+      offset: 80,     
+      duration: 700,   
+      easing: "ease-out",
+      once: true,      
+    });
+  }, []);
     return (
         <div className='bg-section pt-[60px] pb-[90px]'>
             <Container>
                 <div>
-                    <h1 className='font-primary font-bold text-[40px] leading-[45px] text-center pb-[60px]'>My Skills</h1>
+                    <h1 data-aos="fade-up" className='font-primary font-bold text-[40px] leading-[45px] text-center pb-[60px]'>My Skills</h1>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-9 text-center">

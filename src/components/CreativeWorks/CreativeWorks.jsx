@@ -7,13 +7,24 @@ import cleaning from '../../assets/cleaning-service.png'
 import quriarbox from '../../assets/quriarbox.png'
 import weather from '../../assets/weather-app.png'
 import { FaLink } from "react-icons/fa";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const CreativeWorks = () => {
+     useEffect(() => {
+    AOS.init({
+      offset: 80,     
+      duration: 700,   
+      easing: "ease-out",
+      once: true,     
+    });
+  }, []);
   return (
     <div className='py-[90px]'>
             <Container>
                 <div>
-                    <h1 className='font-primary font-bold text-[40px] leading-[45px] text-center pb-[60px]'>MY CREATIVES WORKS.</h1>
+                    <h1 data-aos="fade-up" className='font-primary font-bold text-[40px] leading-[45px] text-center pb-[60px]'>MY CREATIVES WORKS.</h1>
                 </div>
 
                 <div className='flex flex-wrap justify-center md:justify-between gap-6'>
