@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <ul className='hidden lg:flex gap-x-9 items-center text-white font-primary font-semibold text-[20px] leading-9'>
+            <ul className='hidden lg:flex gap-x-4 items-center text-white font-primary font-semibold text-[20px] leading-9'>
               <li className='active text-primary py-2 px-6 rounded transition-all duration-500'>
                 <Link to="/">Home</Link>
               </li>
@@ -32,9 +32,6 @@ const Navbar = () => {
               </li>
               <li className='hover:text-primary py-2 px-6 rounded transition-all duration-500'>
                 <Link to="/work">Resent Work</Link>
-              </li>
-              <li className='hover:text-primary py-2 px-6 rounded transition-all duration-500'>
-                <Link to="/">Service</Link>
               </li>
               <li className='hover:text-primary py-2 px-6 rounded transition-all duration-500'>
                 <Link to="/contact">Contact</Link>
@@ -59,9 +56,6 @@ const Navbar = () => {
               </li>
               <li className='hover:text-black py-2 px-6 rounded transition-all duration-500'>
                 <Link to="/work">Resent Work</Link>
-              </li>
-              <li className='hover:text-black py-2 px-6 rounded transition-all duration-500'>
-                <Link to="/">Service</Link>
               </li>
               <li className='hover:text-black py-2 px-6 rounded transition-all duration-500'>
                 <Link to="/contact">Contact</Link>
